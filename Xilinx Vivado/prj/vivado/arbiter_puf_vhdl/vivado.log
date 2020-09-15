@@ -1,0 +1,271 @@
+#-----------------------------------------------------------
+# Vivado v2019.2 (64-bit)
+# SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+# IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+# Start of session at: Thu Jul 30 11:17:04 2020
+# Process ID: 1928
+# Current directory: C:/Users/FAMILY/Desktop/PUF_full/prj/vivado/arbiter_puf_vhdl
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent2272 C:\Users\FAMILY\Desktop\PUF_full\prj\vivado\arbiter_puf_vhdl\arbiter_puf_vhdl.xpr
+# Log file: C:/Users/FAMILY/Desktop/PUF_full/prj/vivado/arbiter_puf_vhdl/vivado.log
+# Journal file: C:/Users/FAMILY/Desktop/PUF_full/prj/vivado/arbiter_puf_vhdl\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/FAMILY/Desktop/PUF_full/prj/vivado/arbiter_puf_vhdl/arbiter_puf_vhdl.xpr
+INFO: [Project 1-313] Project file moved from 'C:/Users/FAMILY/Desktop/PUF_5_1/prj/vivado/arbiter_puf_vhdl' since last save.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2019.2/data/ip'.
+open_project: Time (s): cpu = 00:00:55 ; elapsed = 00:01:10 . Memory (MB): peak = 858.387 ; gain = 253.258
+update_compile_order -fileset sources_1
+create_ip_run [get_files -of_objects [get_fileset sources_1] C:/Users/FAMILY/Desktop/PUF_full/src/bd/system/system.bd]
+synth_design -rtl -name rtl_1
+Command: synth_design -rtl -name rtl_1
+Starting synth_design
+Using part: xc7a35tcsg324-1
+Top: system_wrapper
+INFO: [Device 21-403] Loading part xc7a35tcsg324-1
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:17 ; elapsed = 00:00:48 . Memory (MB): peak = 1387.066 ; gain = 137.727
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'system_wrapper' [C:/Users/FAMILY/Desktop/PUF_full/src/bd/system/hdl/system_wrapper.vhd:22]
+INFO: [Synth 8-3491] module 'system' declared at 'C:/Users/FAMILY/Desktop/PUF_full/src/bd/system/synth/system.vhd:1921' bound to instance 'system_i' of component 'system' [C:/Users/FAMILY/Desktop/PUF_full/src/bd/system/hdl/system_wrapper.vhd:31]
+INFO: [Synth 8-638] synthesizing module 'system' [C:/Users/FAMILY/Desktop/PUF_full/src/bd/system/synth/system.vhd:1933]
+INFO: [Synth 8-3491] module 'system_arbiter_puf_0_0' declared at 'C:/Users/FAMILY/Desktop/PUF_full/prj/vivado/arbiter_puf_vhdl/.Xil/Vivado-1928-DESKTOP-CNADR78/realtime/system_arbiter_puf_0_0_stub.vhdl:5' bound to instance 'arbiter_puf_0' of component 'system_arbiter_puf_0_0' [C:/Users/FAMILY/Desktop/PUF_full/src/bd/system/synth/system.vhd:2283]
+INFO: [Synth 8-638] synthesizing module 'system_arbiter_puf_0_0' [C:/Users/FAMILY/Desktop/PUF_full/prj/vivado/arbiter_puf_vhdl/.Xil/Vivado-1928-DESKTOP-CNADR78/realtime/system_arbiter_puf_0_0_stub.vhdl:14]
+INFO: [Synth 8-3491] module 'system_axi_gpio_0_0' declared at 'C:/Users/FAMILY/Desktop/PUF_full/prj/vivado/arbiter_puf_vhdl/.Xil/Vivado-1928-DESKTOP-CNADR78/realtime/system_axi_gpio_0_0_stub.vhdl:5' bound to instance 'axi_gpio_0' of component 'system_axi_gpio_0_0' [C:/Users/FAMILY/Desktop/PUF_full/src/bd/system/synth/system.vhd:2289]
+INFO: [Synth 8-638] synthesizing module 'system_axi_gpio_0_0' [C:/Users/FAMILY/Desktop/PUF_full/prj/vivado/arbiter_puf_vhdl/.Xil/Vivado-1928-DESKTOP-CNADR78/realtime/system_axi_gpio_0_0_stub.vhdl:31]
+INFO: [Synth 8-3491] module 'system_axi_gpio_1_0' declared at 'C:/Users/FAMILY/Desktop/PUF_full/prj/vivado/arbiter_puf_vhdl/.Xil/Vivado-1928-DESKTOP-CNADR78/realtime/system_axi_gpio_1_0_stub.vhdl:5' bound to instance 'axi_gpio_1' of component 'system_axi_gpio_1_0' [C:/Users/FAMILY/Desktop/PUF_full/src/bd/system/synth/system.vhd:2312]
+INFO: [Synth 8-638] synthesizing module 'system_axi_gpio_1_0' [C:/Users/FAMILY/Desktop/PUF_full/prj/vivado/arbiter_puf_vhdl/.Xil/Vivado-1928-DESKTOP-CNADR78/realtime/system_axi_gpio_1_0_stub.vhdl:32]
+INFO: [Synth 8-3491] module 'system_axi_uartlite_0_0' declared at 'C:/Users/FAMILY/Desktop/PUF_full/prj/vivado/arbiter_puf_vhdl/.Xil/Vivado-1928-DESKTOP-CNADR78/realtime/system_axi_uartlite_0_0_stub.vhdl:5' bound to instance 'axi_uartlite_0' of component 'system_axi_uartlite_0_0' [C:/Users/FAMILY/Desktop/PUF_full/src/bd/system/synth/system.vhd:2336]
+INFO: [Synth 8-638] synthesizing module 'system_axi_uartlite_0_0' [C:/Users/FAMILY/Desktop/PUF_full/prj/vivado/arbiter_puf_vhdl/.Xil/Vivado-1928-DESKTOP-CNADR78/realtime/system_axi_uartlite_0_0_stub.vhdl:33]
+INFO: [Synth 8-638] synthesizing module 'h_clk_rst_imp_1D3DBPP' [C:/Users/FAMILY/Desktop/PUF_full/src/bd/system/synth/system.vhd:25]
+INFO: [Synth 8-3491] module 'system_clk_wiz_1_0' declared at 'C:/Users/FAMILY/Desktop/PUF_full/prj/vivado/arbiter_puf_vhdl/.Xil/Vivado-1928-DESKTOP-CNADR78/realtime/system_clk_wiz_1_0_stub.vhdl:5' bound to instance 'clk_wiz_1' of component 'system_clk_wiz_1_0' [C:/Users/FAMILY/Desktop/PUF_full/src/bd/system/synth/system.vhd:69]
+INFO: [Synth 8-638] synthesizing module 'system_clk_wiz_1_0' [C:/Users/FAMILY/Desktop/PUF_full/prj/vivado/arbiter_puf_vhdl/.Xil/Vivado-1928-DESKTOP-CNADR78/realtime/system_clk_wiz_1_0_stub.vhdl:14]
+INFO: [Synth 8-3491] module 'system_rst_clk_wiz_1_100M_0' declared at 'C:/Users/FAMILY/Desktop/PUF_full/prj/vivado/arbiter_puf_vhdl/.Xil/Vivado-1928-DESKTOP-CNADR78/realtime/system_rst_clk_wiz_1_100M_0_stub.vhdl:5' bound to instance 'rst_clk_wiz_1_100M' of component 'system_rst_clk_wiz_1_100M_0' [C:/Users/FAMILY/Desktop/PUF_full/src/bd/system/synth/system.vhd:75]
+INFO: [Synth 8-638] synthesizing module 'system_rst_clk_wiz_1_100M_0' [C:/Users/FAMILY/Desktop/PUF_full/prj/vivado/arbiter_puf_vhdl/.Xil/Vivado-1928-DESKTOP-CNADR78/realtime/system_rst_clk_wiz_1_100M_0_stub.vhdl:21]
+INFO: [Synth 8-3491] module 'system_xlconstant_0_0' declared at 'c:/Users/FAMILY/Desktop/PUF_full/src/bd/system/ip/system_xlconstant_0_0/synth/system_xlconstant_0_0.v:57' bound to instance 'xlconstant_0' of component 'system_xlconstant_0_0' [C:/Users/FAMILY/Desktop/PUF_full/src/bd/system/synth/system.vhd:88]
+INFO: [Synth 8-6157] synthesizing module 'system_xlconstant_0_0' [c:/Users/FAMILY/Desktop/PUF_full/src/bd/system/ip/system_xlconstant_0_0/synth/system_xlconstant_0_0.v:57]
+INFO: [Synth 8-6157] synthesizing module 'xlconstant_v1_1_6_xlconstant' [c:/Users/FAMILY/Desktop/PUF_full/src/bd/system/ipshared/34f7/hdl/xlconstant_v1_1_vl_rfs.v:23]
+	Parameter CONST_VAL bound to: 1 - type: integer 
+	Parameter CONST_WIDTH bound to: 1 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'xlconstant_v1_1_6_xlconstant' (1#1) [c:/Users/FAMILY/Desktop/PUF_full/src/bd/system/ipshared/34f7/hdl/xlconstant_v1_1_vl_rfs.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'system_xlconstant_0_0' (2#1) [c:/Users/FAMILY/Desktop/PUF_full/src/bd/system/ip/system_xlconstant_0_0/synth/system_xlconstant_0_0.v:57]
+INFO: [Synth 8-256] done synthesizing module 'h_clk_rst_imp_1D3DBPP' (3#1) [C:/Users/FAMILY/Desktop/PUF_full/src/bd/system/synth/system.vhd:25]
+INFO: [Synth 8-3491] module 'system_ila_0_0' declared at 'C:/Users/FAMILY/Desktop/PUF_full/prj/vivado/arbiter_puf_vhdl/.Xil/Vivado-1928-DESKTOP-CNADR78/realtime/system_ila_0_0_stub.vhdl:5' bound to instance 'ila_0' of component 'system_ila_0_0' [C:/Users/FAMILY/Desktop/PUF_full/src/bd/system/synth/system.vhd:2370]
+INFO: [Synth 8-638] synthesizing module 'system_ila_0_0' [C:/Users/FAMILY/Desktop/PUF_full/prj/vivado/arbiter_puf_vhdl/.Xil/Vivado-1928-DESKTOP-CNADR78/realtime/system_ila_0_0_stub.vhdl:31]
+INFO: [Synth 8-3491] module 'system_ila_1_0' declared at 'C:/Users/FAMILY/Desktop/PUF_full/prj/vivado/arbiter_puf_vhdl/.Xil/Vivado-1928-DESKTOP-CNADR78/realtime/system_ila_1_0_stub.vhdl:5' bound to instance 'ila_1' of component 'system_ila_1_0' [C:/Users/FAMILY/Desktop/PUF_full/src/bd/system/synth/system.vhd:2393]
+INFO: [Synth 8-638] synthesizing module 'system_ila_1_0' [C:/Users/FAMILY/Desktop/PUF_full/prj/vivado/arbiter_puf_vhdl/.Xil/Vivado-1928-DESKTOP-CNADR78/realtime/system_ila_1_0_stub.vhdl:15]
+INFO: [Synth 8-3491] module 'system_mdm_1_0' declared at 'C:/Users/FAMILY/Desktop/PUF_full/prj/vivado/arbiter_puf_vhdl/.Xil/Vivado-1928-DESKTOP-CNADR78/realtime/system_mdm_1_0_stub.vhdl:5' bound to instance 'mdm_1' of component 'system_mdm_1_0' [C:/Users/FAMILY/Desktop/PUF_full/src/bd/system/synth/system.vhd:2400]
+INFO: [Synth 8-638] synthesizing module 'system_mdm_1_0' [C:/Users/FAMILY/Desktop/PUF_full/prj/vivado/arbiter_puf_vhdl/.Xil/Vivado-1928-DESKTOP-CNADR78/realtime/system_mdm_1_0_stub.vhdl:41]
+INFO: [Synth 8-3491] module 'system_microblaze_0_0' declared at 'C:/Users/FAMILY/Desktop/PUF_full/prj/vivado/arbiter_puf_vhdl/.Xil/Vivado-1928-DESKTOP-CNADR78/realtime/system_microblaze_0_0_stub.vhdl:5' bound to instance 'microblaze_0' of component 'system_microblaze_0_0' [C:/Users/FAMILY/Desktop/PUF_full/src/bd/system/synth/system.vhd:2433]
+INFO: [Synth 8-638] synthesizing module 'system_microblaze_0_0' [C:/Users/FAMILY/Desktop/PUF_full/prj/vivado/arbiter_puf_vhdl/.Xil/Vivado-1928-DESKTOP-CNADR78/realtime/system_microblaze_0_0_stub.vhdl:63]
+INFO: [Synth 8-638] synthesizing module 'system_microblaze_0_axi_periph_0' [C:/Users/FAMILY/Desktop/PUF_full/src/bd/system/synth/system.vhd:1286]
+INFO: [Synth 8-638] synthesizing module 'm00_couplers_imp_1RZ0IW6' [C:/Users/FAMILY/Desktop/PUF_full/src/bd/system/synth/system.vhd:140]
+INFO: [Synth 8-256] done synthesizing module 'm00_couplers_imp_1RZ0IW6' (4#1) [C:/Users/FAMILY/Desktop/PUF_full/src/bd/system/synth/system.vhd:140]
+INFO: [Synth 8-638] synthesizing module 'm01_couplers_imp_K87I2F' [C:/Users/FAMILY/Desktop/PUF_full/src/bd/system/synth/system.vhd:245]
+INFO: [Synth 8-256] done synthesizing module 'm01_couplers_imp_K87I2F' (5#1) [C:/Users/FAMILY/Desktop/PUF_full/src/bd/system/synth/system.vhd:245]
+INFO: [Synth 8-638] synthesizing module 'm02_couplers_imp_QYRHL1' [C:/Users/FAMILY/Desktop/PUF_full/src/bd/system/synth/system.vhd:352]
+INFO: [Synth 8-256] done synthesizing module 'm02_couplers_imp_QYRHL1' (6#1) [C:/Users/FAMILY/Desktop/PUF_full/src/bd/system/synth/system.vhd:352]
+INFO: [Synth 8-638] synthesizing module 'm03_couplers_imp_1LIFQL0' [C:/Users/FAMILY/Desktop/PUF_full/src/bd/system/synth/system.vhd:453]
+INFO: [Synth 8-256] done synthesizing module 'm03_couplers_imp_1LIFQL0' (7#1) [C:/Users/FAMILY/Desktop/PUF_full/src/bd/system/synth/system.vhd:453]
+INFO: [Synth 8-638] synthesizing module 's00_couplers_imp_1LZPV07' [C:/Users/FAMILY/Desktop/PUF_full/src/bd/system/synth/system.vhd:1116]
+INFO: [Synth 8-256] done synthesizing module 's00_couplers_imp_1LZPV07' (8#1) [C:/Users/FAMILY/Desktop/PUF_full/src/bd/system/synth/system.vhd:1116]
+INFO: [Synth 8-3491] module 'system_xbar_0' declared at 'C:/Users/FAMILY/Desktop/PUF_full/prj/vivado/arbiter_puf_vhdl/.Xil/Vivado-1928-DESKTOP-CNADR78/realtime/system_xbar_0_stub.vhdl:5' bound to instance 'xbar' of component 'system_xbar_0' [C:/Users/FAMILY/Desktop/PUF_full/src/bd/system/synth/system.vhd:1818]
+INFO: [Synth 8-638] synthesizing module 'system_xbar_0' [C:/Users/FAMILY/Desktop/PUF_full/prj/vivado/arbiter_puf_vhdl/.Xil/Vivado-1928-DESKTOP-CNADR78/realtime/system_xbar_0_stub.vhdl:51]
+INFO: [Synth 8-256] done synthesizing module 'system_microblaze_0_axi_periph_0' (9#1) [C:/Users/FAMILY/Desktop/PUF_full/src/bd/system/synth/system.vhd:1286]
+INFO: [Synth 8-638] synthesizing module 'microblaze_0_local_memory_imp_OGE0N8' [C:/Users/FAMILY/Desktop/PUF_full/src/bd/system/synth/system.vhd:537]
+INFO: [Synth 8-3491] module 'system_dlmb_bram_if_cntlr_0' declared at 'C:/Users/FAMILY/Desktop/PUF_full/prj/vivado/arbiter_puf_vhdl/.Xil/Vivado-1928-DESKTOP-CNADR78/realtime/system_dlmb_bram_if_cntlr_0_stub.vhdl:5' bound to instance 'dlmb_bram_if_cntlr' of component 'system_dlmb_bram_if_cntlr_0' [C:/Users/FAMILY/Desktop/PUF_full/src/bd/system/synth/system.vhd:751]
+INFO: [Synth 8-638] synthesizing module 'system_dlmb_bram_if_cntlr_0' [C:/Users/FAMILY/Desktop/PUF_full/prj/vivado/arbiter_puf_vhdl/.Xil/Vivado-1928-DESKTOP-CNADR78/realtime/system_dlmb_bram_if_cntlr_0_stub.vhdl:31]
+INFO: [Synth 8-3491] module 'system_dlmb_v10_0' declared at 'C:/Users/FAMILY/Desktop/PUF_full/prj/vivado/arbiter_puf_vhdl/.Xil/Vivado-1928-DESKTOP-CNADR78/realtime/system_dlmb_v10_0_stub.vhdl:5' bound to instance 'dlmb_v10' of component 'system_dlmb_v10_0' [C:/Users/FAMILY/Desktop/PUF_full/src/bd/system/synth/system.vhd:805]
+INFO: [Synth 8-638] synthesizing module 'system_dlmb_v10_0' [C:/Users/FAMILY/Desktop/PUF_full/prj/vivado/arbiter_puf_vhdl/.Xil/Vivado-1928-DESKTOP-CNADR78/realtime/system_dlmb_v10_0_stub.vhdl:36]
+INFO: [Synth 8-3491] module 'system_ilmb_bram_if_cntlr_0' declared at 'C:/Users/FAMILY/Desktop/PUF_full/prj/vivado/arbiter_puf_vhdl/.Xil/Vivado-1928-DESKTOP-CNADR78/realtime/system_ilmb_bram_if_cntlr_0_stub.vhdl:5' bound to instance 'ilmb_bram_if_cntlr' of component 'system_ilmb_bram_if_cntlr_0' [C:/Users/FAMILY/Desktop/PUF_full/src/bd/system/synth/system.vhd:833]
+INFO: [Synth 8-638] synthesizing module 'system_ilmb_bram_if_cntlr_0' [C:/Users/FAMILY/Desktop/PUF_full/prj/vivado/arbiter_puf_vhdl/.Xil/Vivado-1928-DESKTOP-CNADR78/realtime/system_ilmb_bram_if_cntlr_0_stub.vhdl:31]
+INFO: [Synth 8-3491] module 'system_ilmb_v10_0' declared at 'C:/Users/FAMILY/Desktop/PUF_full/prj/vivado/arbiter_puf_vhdl/.Xil/Vivado-1928-DESKTOP-CNADR78/realtime/system_ilmb_v10_0_stub.vhdl:5' bound to instance 'ilmb_v10' of component 'system_ilmb_v10_0' [C:/Users/FAMILY/Desktop/PUF_full/src/bd/system/synth/system.vhd:887]
+INFO: [Synth 8-638] synthesizing module 'system_ilmb_v10_0' [C:/Users/FAMILY/Desktop/PUF_full/prj/vivado/arbiter_puf_vhdl/.Xil/Vivado-1928-DESKTOP-CNADR78/realtime/system_ilmb_v10_0_stub.vhdl:36]
+INFO: [Synth 8-3491] module 'system_lmb_bram_0' declared at 'C:/Users/FAMILY/Desktop/PUF_full/prj/vivado/arbiter_puf_vhdl/.Xil/Vivado-1928-DESKTOP-CNADR78/realtime/system_lmb_bram_0_stub.vhdl:5' bound to instance 'lmb_bram' of component 'system_lmb_bram_0' [C:/Users/FAMILY/Desktop/PUF_full/src/bd/system/synth/system.vhd:915]
+INFO: [Synth 8-638] synthesizing module 'system_lmb_bram_0' [C:/Users/FAMILY/Desktop/PUF_full/prj/vivado/arbiter_puf_vhdl/.Xil/Vivado-1928-DESKTOP-CNADR78/realtime/system_lmb_bram_0_stub.vhdl:27]
+INFO: [Synth 8-256] done synthesizing module 'microblaze_0_local_memory_imp_OGE0N8' (10#1) [C:/Users/FAMILY/Desktop/PUF_full/src/bd/system/synth/system.vhd:537]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'microblaze_0_axi_periph'. This will prevent further optimization [C:/Users/FAMILY/Desktop/PUF_full/src/bd/system/synth/system.vhd:2488]
+INFO: [Synth 8-256] done synthesizing module 'system' (11#1) [C:/Users/FAMILY/Desktop/PUF_full/src/bd/system/synth/system.vhd:1933]
+INFO: [Synth 8-256] done synthesizing module 'system_wrapper' (12#1) [C:/Users/FAMILY/Desktop/PUF_full/src/bd/system/hdl/system_wrapper.vhd:22]
+WARNING: [Synth 8-3331] design s00_couplers_imp_1LZPV07 has unconnected port M_ACLK
+WARNING: [Synth 8-3331] design s00_couplers_imp_1LZPV07 has unconnected port M_ARESETN
+WARNING: [Synth 8-3331] design s00_couplers_imp_1LZPV07 has unconnected port S_ACLK
+WARNING: [Synth 8-3331] design s00_couplers_imp_1LZPV07 has unconnected port S_ARESETN
+WARNING: [Synth 8-3331] design m03_couplers_imp_1LIFQL0 has unconnected port M_ACLK
+WARNING: [Synth 8-3331] design m03_couplers_imp_1LIFQL0 has unconnected port M_ARESETN
+WARNING: [Synth 8-3331] design m03_couplers_imp_1LIFQL0 has unconnected port S_ACLK
+WARNING: [Synth 8-3331] design m03_couplers_imp_1LIFQL0 has unconnected port S_ARESETN
+WARNING: [Synth 8-3331] design m02_couplers_imp_QYRHL1 has unconnected port M_ACLK
+WARNING: [Synth 8-3331] design m02_couplers_imp_QYRHL1 has unconnected port M_ARESETN
+WARNING: [Synth 8-3331] design m02_couplers_imp_QYRHL1 has unconnected port S_ACLK
+WARNING: [Synth 8-3331] design m02_couplers_imp_QYRHL1 has unconnected port S_ARESETN
+WARNING: [Synth 8-3331] design m01_couplers_imp_K87I2F has unconnected port M_ACLK
+WARNING: [Synth 8-3331] design m01_couplers_imp_K87I2F has unconnected port M_ARESETN
+WARNING: [Synth 8-3331] design m01_couplers_imp_K87I2F has unconnected port S_ACLK
+WARNING: [Synth 8-3331] design m01_couplers_imp_K87I2F has unconnected port S_ARESETN
+WARNING: [Synth 8-3331] design m00_couplers_imp_1RZ0IW6 has unconnected port M_ACLK
+WARNING: [Synth 8-3331] design m00_couplers_imp_1RZ0IW6 has unconnected port M_ARESETN
+WARNING: [Synth 8-3331] design m00_couplers_imp_1RZ0IW6 has unconnected port S_ACLK
+WARNING: [Synth 8-3331] design m00_couplers_imp_1RZ0IW6 has unconnected port S_ARESETN
+WARNING: [Synth 8-3331] design system_microblaze_0_axi_periph_0 has unconnected port M00_ACLK
+WARNING: [Synth 8-3331] design system_microblaze_0_axi_periph_0 has unconnected port M00_ARESETN
+WARNING: [Synth 8-3331] design system_microblaze_0_axi_periph_0 has unconnected port M01_ACLK
+WARNING: [Synth 8-3331] design system_microblaze_0_axi_periph_0 has unconnected port M01_ARESETN
+WARNING: [Synth 8-3331] design system_microblaze_0_axi_periph_0 has unconnected port M02_ACLK
+WARNING: [Synth 8-3331] design system_microblaze_0_axi_periph_0 has unconnected port M02_ARESETN
+WARNING: [Synth 8-3331] design system_microblaze_0_axi_periph_0 has unconnected port M03_ACLK
+WARNING: [Synth 8-3331] design system_microblaze_0_axi_periph_0 has unconnected port M03_ARESETN
+WARNING: [Synth 8-3331] design system_microblaze_0_axi_periph_0 has unconnected port S00_ACLK
+WARNING: [Synth 8-3331] design system_microblaze_0_axi_periph_0 has unconnected port S00_ARESETN
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:23 ; elapsed = 00:00:58 . Memory (MB): peak = 1445.594 ; gain = 196.254
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:24 ; elapsed = 00:01:03 . Memory (MB): peak = 1445.594 ; gain = 196.254
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:24 ; elapsed = 00:01:03 . Memory (MB): peak = 1445.594 ; gain = 196.254
+---------------------------------------------------------------------------------
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/FAMILY/Desktop/PUF_full/src/bd/system/ip/system_arbiter_puf_0_0/system_arbiter_puf_0_0.dcp' for cell 'system_i/arbiter_puf_0'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/FAMILY/Desktop/PUF_full/src/bd/system/ip/system_axi_gpio_0_0/system_axi_gpio_0_0.dcp' for cell 'system_i/axi_gpio_0'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/FAMILY/Desktop/PUF_full/src/bd/system/ip/system_axi_gpio_1_0/system_axi_gpio_1_0.dcp' for cell 'system_i/axi_gpio_1'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/FAMILY/Desktop/PUF_full/src/bd/system/ip/system_axi_uartlite_0_0/system_axi_uartlite_0_0.dcp' for cell 'system_i/axi_uartlite_0'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/FAMILY/Desktop/PUF_full/src/bd/system/ip/system_ila_0_0/system_ila_0_0.dcp' for cell 'system_i/ila_0'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/FAMILY/Desktop/PUF_full/src/bd/system/ip/system_ila_1_0/system_ila_1_0.dcp' for cell 'system_i/ila_1'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/FAMILY/Desktop/PUF_full/src/bd/system/ip/system_mdm_1_0/system_mdm_1_0.dcp' for cell 'system_i/mdm_1'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/FAMILY/Desktop/PUF_full/src/bd/system/ip/system_microblaze_0_0/system_microblaze_0_0.dcp' for cell 'system_i/microblaze_0'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/FAMILY/Desktop/PUF_full/src/bd/system/ip/system_clk_wiz_1_0/system_clk_wiz_1_0.dcp' for cell 'system_i/h_clk_rst/clk_wiz_1'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/FAMILY/Desktop/PUF_full/src/bd/system/ip/system_rst_clk_wiz_1_100M_0/system_rst_clk_wiz_1_100M_0.dcp' for cell 'system_i/h_clk_rst/rst_clk_wiz_1_100M'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/FAMILY/Desktop/PUF_full/src/bd/system/ip/system_xbar_0/system_xbar_0.dcp' for cell 'system_i/microblaze_0_axi_periph/xbar'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/FAMILY/Desktop/PUF_full/src/bd/system/ip/system_dlmb_bram_if_cntlr_0/system_dlmb_bram_if_cntlr_0.dcp' for cell 'system_i/microblaze_0_local_memory/dlmb_bram_if_cntlr'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/FAMILY/Desktop/PUF_full/src/bd/system/ip/system_dlmb_v10_0/system_dlmb_v10_0.dcp' for cell 'system_i/microblaze_0_local_memory/dlmb_v10'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/FAMILY/Desktop/PUF_full/src/bd/system/ip/system_ilmb_bram_if_cntlr_0/system_ilmb_bram_if_cntlr_0.dcp' for cell 'system_i/microblaze_0_local_memory/ilmb_bram_if_cntlr'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/FAMILY/Desktop/PUF_full/src/bd/system/ip/system_ilmb_v10_0/system_ilmb_v10_0.dcp' for cell 'system_i/microblaze_0_local_memory/ilmb_v10'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/FAMILY/Desktop/PUF_full/src/bd/system/ip/system_lmb_bram_0/system_lmb_bram_0.dcp' for cell 'system_i/microblaze_0_local_memory/lmb_bram'
+Netlist sorting complete. Time (s): cpu = 00:00:01 ; elapsed = 00:00:01 . Memory (MB): peak = 1445.594 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 533 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2019.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-140] Inserted 1 IBUFs to IO ports without IO buffers.
+INFO: [Opt 31-141] Inserted 1 OBUFs to IO ports without IO buffers.
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [c:/Users/FAMILY/Desktop/PUF_full/src/bd/system/ip/system_microblaze_0_0/system_microblaze_0_0.xdc] for cell 'system_i/microblaze_0/U0'
+Finished Parsing XDC File [c:/Users/FAMILY/Desktop/PUF_full/src/bd/system/ip/system_microblaze_0_0/system_microblaze_0_0.xdc] for cell 'system_i/microblaze_0/U0'
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [c:/Users/FAMILY/Desktop/PUF_full/src/bd/system/ip/system_microblaze_0_0/system_microblaze_0_0.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/system_wrapper_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/system_wrapper_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [c:/Users/FAMILY/Desktop/PUF_full/src/bd/system/ip/system_dlmb_v10_0/system_dlmb_v10_0.xdc] for cell 'system_i/microblaze_0_local_memory/dlmb_v10/U0'
+Finished Parsing XDC File [c:/Users/FAMILY/Desktop/PUF_full/src/bd/system/ip/system_dlmb_v10_0/system_dlmb_v10_0.xdc] for cell 'system_i/microblaze_0_local_memory/dlmb_v10/U0'
+Parsing XDC File [c:/Users/FAMILY/Desktop/PUF_full/src/bd/system/ip/system_ilmb_v10_0/system_ilmb_v10_0.xdc] for cell 'system_i/microblaze_0_local_memory/ilmb_v10/U0'
+Finished Parsing XDC File [c:/Users/FAMILY/Desktop/PUF_full/src/bd/system/ip/system_ilmb_v10_0/system_ilmb_v10_0.xdc] for cell 'system_i/microblaze_0_local_memory/ilmb_v10/U0'
+Parsing XDC File [c:/Users/FAMILY/Desktop/PUF_full/src/bd/system/ip/system_mdm_1_0/system_mdm_1_0.xdc] for cell 'system_i/mdm_1/U0'
+Finished Parsing XDC File [c:/Users/FAMILY/Desktop/PUF_full/src/bd/system/ip/system_mdm_1_0/system_mdm_1_0.xdc] for cell 'system_i/mdm_1/U0'
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [c:/Users/FAMILY/Desktop/PUF_full/src/bd/system/ip/system_mdm_1_0/system_mdm_1_0.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/system_wrapper_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/system_wrapper_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [c:/Users/FAMILY/Desktop/PUF_full/src/bd/system/ip/system_clk_wiz_1_0/system_clk_wiz_1_0_board.xdc] for cell 'system_i/h_clk_rst/clk_wiz_1/inst'
+Finished Parsing XDC File [c:/Users/FAMILY/Desktop/PUF_full/src/bd/system/ip/system_clk_wiz_1_0/system_clk_wiz_1_0_board.xdc] for cell 'system_i/h_clk_rst/clk_wiz_1/inst'
+Parsing XDC File [c:/Users/FAMILY/Desktop/PUF_full/src/bd/system/ip/system_clk_wiz_1_0/system_clk_wiz_1_0.xdc] for cell 'system_i/h_clk_rst/clk_wiz_1/inst'
+Finished Parsing XDC File [c:/Users/FAMILY/Desktop/PUF_full/src/bd/system/ip/system_clk_wiz_1_0/system_clk_wiz_1_0.xdc] for cell 'system_i/h_clk_rst/clk_wiz_1/inst'
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [c:/Users/FAMILY/Desktop/PUF_full/src/bd/system/ip/system_clk_wiz_1_0/system_clk_wiz_1_0.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/system_wrapper_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/system_wrapper_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [c:/Users/FAMILY/Desktop/PUF_full/src/bd/system/ip/system_rst_clk_wiz_1_100M_0/system_rst_clk_wiz_1_100M_0_board.xdc] for cell 'system_i/h_clk_rst/rst_clk_wiz_1_100M/U0'
+Finished Parsing XDC File [c:/Users/FAMILY/Desktop/PUF_full/src/bd/system/ip/system_rst_clk_wiz_1_100M_0/system_rst_clk_wiz_1_100M_0_board.xdc] for cell 'system_i/h_clk_rst/rst_clk_wiz_1_100M/U0'
+Parsing XDC File [c:/Users/FAMILY/Desktop/PUF_full/src/bd/system/ip/system_rst_clk_wiz_1_100M_0/system_rst_clk_wiz_1_100M_0.xdc] for cell 'system_i/h_clk_rst/rst_clk_wiz_1_100M/U0'
+Finished Parsing XDC File [c:/Users/FAMILY/Desktop/PUF_full/src/bd/system/ip/system_rst_clk_wiz_1_100M_0/system_rst_clk_wiz_1_100M_0.xdc] for cell 'system_i/h_clk_rst/rst_clk_wiz_1_100M/U0'
+Parsing XDC File [c:/Users/FAMILY/Desktop/PUF_full/src/bd/system/ip/system_axi_uartlite_0_0/system_axi_uartlite_0_0_board.xdc] for cell 'system_i/axi_uartlite_0/U0'
+Finished Parsing XDC File [c:/Users/FAMILY/Desktop/PUF_full/src/bd/system/ip/system_axi_uartlite_0_0/system_axi_uartlite_0_0_board.xdc] for cell 'system_i/axi_uartlite_0/U0'
+Parsing XDC File [c:/Users/FAMILY/Desktop/PUF_full/src/bd/system/ip/system_axi_uartlite_0_0/system_axi_uartlite_0_0.xdc] for cell 'system_i/axi_uartlite_0/U0'
+Finished Parsing XDC File [c:/Users/FAMILY/Desktop/PUF_full/src/bd/system/ip/system_axi_uartlite_0_0/system_axi_uartlite_0_0.xdc] for cell 'system_i/axi_uartlite_0/U0'
+Parsing XDC File [c:/Users/FAMILY/Desktop/PUF_full/src/bd/system/ip/system_axi_gpio_0_0/system_axi_gpio_0_0_board.xdc] for cell 'system_i/axi_gpio_0/U0'
+Finished Parsing XDC File [c:/Users/FAMILY/Desktop/PUF_full/src/bd/system/ip/system_axi_gpio_0_0/system_axi_gpio_0_0_board.xdc] for cell 'system_i/axi_gpio_0/U0'
+Parsing XDC File [c:/Users/FAMILY/Desktop/PUF_full/src/bd/system/ip/system_axi_gpio_0_0/system_axi_gpio_0_0.xdc] for cell 'system_i/axi_gpio_0/U0'
+Finished Parsing XDC File [c:/Users/FAMILY/Desktop/PUF_full/src/bd/system/ip/system_axi_gpio_0_0/system_axi_gpio_0_0.xdc] for cell 'system_i/axi_gpio_0/U0'
+Parsing XDC File [c:/Users/FAMILY/Desktop/PUF_full/src/bd/system/ip/system_axi_gpio_1_0/system_axi_gpio_1_0_board.xdc] for cell 'system_i/axi_gpio_1/U0'
+Finished Parsing XDC File [c:/Users/FAMILY/Desktop/PUF_full/src/bd/system/ip/system_axi_gpio_1_0/system_axi_gpio_1_0_board.xdc] for cell 'system_i/axi_gpio_1/U0'
+Parsing XDC File [c:/Users/FAMILY/Desktop/PUF_full/src/bd/system/ip/system_axi_gpio_1_0/system_axi_gpio_1_0.xdc] for cell 'system_i/axi_gpio_1/U0'
+Finished Parsing XDC File [c:/Users/FAMILY/Desktop/PUF_full/src/bd/system/ip/system_axi_gpio_1_0/system_axi_gpio_1_0.xdc] for cell 'system_i/axi_gpio_1/U0'
+Parsing XDC File [c:/Users/FAMILY/Desktop/PUF_full/src/bd/system/ip/system_ila_0_0/ila_v6_2/constraints/ila.xdc] for cell 'system_i/ila_0/U0'
+Finished Parsing XDC File [c:/Users/FAMILY/Desktop/PUF_full/src/bd/system/ip/system_ila_0_0/ila_v6_2/constraints/ila.xdc] for cell 'system_i/ila_0/U0'
+Parsing XDC File [c:/Users/FAMILY/Desktop/PUF_full/src/bd/system/ip/system_ila_1_0/ila_v6_2/constraints/ila.xdc] for cell 'system_i/ila_1/U0'
+Finished Parsing XDC File [c:/Users/FAMILY/Desktop/PUF_full/src/bd/system/ip/system_ila_1_0/ila_v6_2/constraints/ila.xdc] for cell 'system_i/ila_1/U0'
+INFO: [Timing 38-2] Deriving generated clocks
+Parsing XDC File [C:/Users/FAMILY/Desktop/PUF_full/src/xdc/pin.xdc]
+Finished Parsing XDC File [C:/Users/FAMILY/Desktop/PUF_full/src/xdc/pin.xdc]
+Parsing XDC File [C:/Users/FAMILY/Desktop/PUF_full/src/xdc/area.xdc]
+Finished Parsing XDC File [C:/Users/FAMILY/Desktop/PUF_full/src/xdc/area.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/FAMILY/Desktop/PUF_full/src/xdc/area.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/system_wrapper_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/system_wrapper_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [C:/Users/FAMILY/Desktop/PUF_full/src/xdc/puf_loc.xdc]
+Finished Parsing XDC File [C:/Users/FAMILY/Desktop/PUF_full/src/xdc/puf_loc.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/FAMILY/Desktop/PUF_full/src/xdc/puf_loc.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/system_wrapper_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/system_wrapper_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [C:/Users/FAMILY/Desktop/PUF_full/src/xdc/debug.xdc]
+Finished Parsing XDC File [C:/Users/FAMILY/Desktop/PUF_full/src/xdc/debug.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/FAMILY/Desktop/PUF_full/src/xdc/debug.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/system_wrapper_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/system_wrapper_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.031 . Memory (MB): peak = 1651.203 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 284 instances were transformed.
+  CFGLUT5 => CFGLUT5 (SRL16E, SRLC32E): 188 instances
+  LUT6_2 => LUT6_2 (LUT5, LUT6): 80 instances
+  RAM32M => RAM32M (RAMD32(x6), RAMS32(x2)): 16 instances
+
+RTL Elaboration Complete:  : Time (s): cpu = 00:01:15 ; elapsed = 00:02:08 . Memory (MB): peak = 1671.863 ; gain = 422.523
+91 Infos, 30 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:01:30 ; elapsed = 00:02:40 . Memory (MB): peak = 1671.863 ; gain = 422.523
+launch_runs impl_1 -jobs 4
+[Thu Jul 30 11:23:35 2020] Launched impl_1...
+Run output will be captured here: C:/Users/FAMILY/Desktop/PUF_full/prj/vivado/arbiter_puf_vhdl/arbiter_puf_vhdl.runs/impl_1/runme.log
+launch_runs: Time (s): cpu = 00:00:05 ; elapsed = 00:00:16 . Memory (MB): peak = 1712.520 ; gain = 1.074
+close_design
+close_design: Time (s): cpu = 00:00:06 ; elapsed = 00:00:41 . Memory (MB): peak = 1733.992 ; gain = 0.000
+open_run impl_1
+Netlist sorting complete. Time (s): cpu = 00:00:01 ; elapsed = 00:00:01 . Memory (MB): peak = 1867.648 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 618 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 1 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2019.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Timing 38-478] Restoring timing data from binary archive.
+INFO: [Timing 38-479] Binary timing data restore complete.
+INFO: [Project 1-856] Restoring constraints from binary archive.
+INFO: [Project 1-853] Binary constraint restore complete.
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:03 ; elapsed = 00:00:09 . Memory (MB): peak = 2491.652 ; gain = 0.000
+Restored from archive | CPU: 4.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:03 ; elapsed = 00:00:09 . Memory (MB): peak = 2491.652 ; gain = 0.000
+Generating merged BMM file for the design top 'system_wrapper'...
+INFO: [Memdata 28-144] Successfully populated the BRAM INIT strings from the following elf files: c:/Users/FAMILY/Desktop/PUF_full/src/bd/system/ip/system_microblaze_0_0/data/mb_bootloop_le.elf 
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.046 . Memory (MB): peak = 2491.652 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 334 instances were transformed.
+  CFGLUT5 => CFGLUT5 (SRL16E, SRLC32E): 232 instances
+  LUT6_2 => LUT6_2 (LUT5, LUT6): 79 instances
+  RAM32M => RAM32M (RAMD32(x6), RAMS32(x2)): 22 instances
+  SRLC16E => SRL16E: 1 instance 
+
+open_run: Time (s): cpu = 00:01:14 ; elapsed = 00:01:54 . Memory (MB): peak = 2491.652 ; gain = 757.660
+open_report: Time (s): cpu = 00:00:26 ; elapsed = 00:00:24 . Memory (MB): peak = 2491.652 ; gain = 0.000
+WARNING: [Timing 38-436] There are set_bus_skew constraint(s) in this design. Please run report_bus_skew to ensure that bus skew requirements are met.
+exit
+INFO: [Common 17-206] Exiting Vivado at Thu Jul 30 12:09:09 2020...

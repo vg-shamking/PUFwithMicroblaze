@@ -1,0 +1,67 @@
+#include "xparameters.h"
+#include "xgpio.h"
+#include "xil_printf.h"
+#include "xuarlite.h"
+
+XGpio Gpio_0;
+XGpio Gpio_1;
+XUarlite Uarlite;
+
+void set_challenge(int challenge);
+void create_pulse();
+int get_response();
+
+int main(void)
+{
+	int Status;
+	int challenge;
+	int resp32;
+	int i;
+	int response;
+
+	Status = XGpio_Initialize(&Gpio_0, XPAR_GPIO_0_DEVICE_ID);	
+	if (Status != XST_SUCCESS) {
+		xil_printf("Gpio_0 Initialization Failed\r\n");
+		return XST_FAILURE;
+	}
+	Status = XGpio_Initialize(&Gpio_1, XPAR_GPIO_1_DEVICE_ID);	
+	if (Status != XST_SUCCESS) {
+		xil_printf("Gpio_1 Initialization Failed\r\n");
+		return XST_FAILURE;
+	}
+	Status = XUarlite_Initialize(&Uarlite, XPAR_AXI_UARTLITE_0_DEVICE_ID);	
+	if (Status != XST_SUCCESS) {
+		xil_printf("Gpio_1 Initialization Failed\r\n");
+		return XST_FAILURE;
+	}
+
+	for(challenge = 0; challenge < 100000; challenge++){
+		set_challenge(challenge);
+		resp32 = 0;
+
+		for(i = 0; i < 32; i++){
+		create_pulse();
+		response = get_response();
+		resp32 = resp32 | (response << i);
+		}
+		if ((resp32 != 0x00000000) && (resp32 != 0xFFFFFFFF)){
+			xil_printf("challenge = %d; response = %x\n\r", challenge, resp32);
+		}
+
+	}
+
+	return 0;
+}
+
+void set_challenge(int challenge){
+	XGpio_DiscreteWrite(&Gpio_0, 1, challenge);
+}
+void create_pulse(){
+	XGpio_DiscreteWrite(&Gpio_1, 1, 1);
+	XGpio_DiscreteWrite(&Gpio_1, 1, 0);
+}
+int get_response(){
+	int ret;
+	ret = XGpio_DiscreteRead(&Gpio_1, 2);
+	return ret;
+}

@@ -1,0 +1,15 @@
+
+*** Running vivado
+    with args -log system_ila_1_0.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source system_ila_1_0.tcl
+
+
+****** Vivado v2019.2 (64-bit)
+  **** SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+  **** IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+source system_ila_1_0.tcl -notrace
+create_project: Time (s): cpu = 00:00:03 ; elapsed = 00:00:32 . Memory (MB): peak = 305.645 ; gain = 36.609
+INFO: [IP_Flow 19-4838] Using cached IP synthesis design for IP system_ila_1_0, cache-ID = c26990540b1d4d19.
+config_ip_cache: Time (s): cpu = 00:00:05 ; elapsed = 00:00:10 . Memory (MB): peak = 355.949 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Fri Jun  5 00:50:06 2020...

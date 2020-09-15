@@ -1,0 +1,4 @@
+ERROR: Exception caught trying to open file C:\Users\FAMILY\Desktop\PUF_5_1\prj\vivado\arbiter_puf_vhdl\arbiter_puf_vhdl.runs\impl_1/runme.log
+	Exception name: Error
+	Exception error code: 70
+	Exception message: Permission denied
