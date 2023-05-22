@@ -7,4 +7,4 @@
 
 ##### C code text for an implementation to Artix-7 circuit is [here.](https://github.com/vg-shamking/PUFwithMicroblaze/blob/master/Xilinx%20Vivado/C_code_for_check.txt)
 
-##### PowerPoint presentation you can download [here.](https://github.com/vg-shamking/PUFwithMicroblaze/blob/master/Xilinx%20Vivado/AK-PUF.pptx)
+##### PowerPoint presentation can be downloaded [here.](https://github.com/vg-shamking/PUFwithMicroblaze/blob/master/Xilinx%20Vivado/AK-PUF.pptx)
