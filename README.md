@@ -1,4 +1,4 @@
-# Project done in Xilinx Vivado written in Verilog and VHDL languages as an exam project in WSiZ "Copernicus" in 2020.
+# Project done in Xilinx Vivado written in Verilog and VHDL languages as an exam project in WSiZ "Copernicus"
 
 # Subject: "Phisically unclonable function (PUF) with Microblaze in Xilinx Vivado"
 
